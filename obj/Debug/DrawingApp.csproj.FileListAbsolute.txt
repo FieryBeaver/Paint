@@ -197,3 +197,5 @@ C:\Users\BOBER\Desktop\DrawingApp-master\DrawingApp\bin\Debug\System.Threading.T
 C:\Users\BOBER\Desktop\DrawingApp-master\DrawingApp\obj\Debug\WpfApp1.exe.config
 C:\Users\BOBER\Desktop\DrawingApp-master\DrawingApp\obj\Debug\WpfApp1_Content.g.cs
 C:\Users\BOBER\Desktop\DrawingApp-master\DrawingApp\obj\Debug\DrawingApp.csproj.CopyComplete
+C:\Users\BOBER\Desktop\DrawingApp-master\DrawingApp\obj\Debug\Loading.g.cs
+C:\Users\BOBER\Desktop\DrawingApp-master\DrawingApp\obj\Debug\Loading.baml

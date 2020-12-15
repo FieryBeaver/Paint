@@ -164,6 +164,9 @@
     </ApplicationDefinition>
     <Compile Include="DataBaseConnector.cs" />
     <Compile Include="LicenseKey.cs" />
+    <Compile Include="Loading.xaml.cs">
+      <DependentUpon>Loading.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindows_Points.cs" />
     <Compile Include="MainWindow_Files.cs" />
     <Compile Include="MainWindow_Tools.cs" />
@@ -175,6 +178,10 @@
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
+    <Page Include="Loading.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
