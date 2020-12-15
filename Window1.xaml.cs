@@ -33,21 +33,14 @@ namespace WpfApp1
             {
                 dataBaseConnector.Keys.Add(new LicenseKey {Id=1, Key = "trial" });
             }
-            catch(Exception exp) { }
-
-            
-          
-
-               
-
-
-
+            catch(Exception exp) { }        
 
             if (dataBaseConnector.Had(LicenseKeyTextBox.Text))
             {
                 MainWindow mainWindow = new MainWindow();
                 mainWindow.Show();
-                this.Hide();
+                this.Close();
+                SetAuthorize(true);
 
             }
             else
@@ -55,6 +48,15 @@ namespace WpfApp1
                 MessageBox.Show("Invalid License Key");
             }
 
+        }
+
+        private void SetAuthorize(bool v)
+        {
+            using (System.IO.StreamWriter file =
+             new System.IO.StreamWriter("athorize.txt"))
+            {                                
+                        file.WriteLine(v.ToString());                
+            }
         }
     }
 }

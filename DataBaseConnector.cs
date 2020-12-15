@@ -59,7 +59,7 @@ namespace WpfApp1
 
         internal bool Had(string text)
         {
-            throw new NotImplementedException();
+            return text=="trial";   
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder

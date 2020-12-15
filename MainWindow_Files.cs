@@ -18,12 +18,12 @@ namespace WpfApp1
 
         FileStream myfileStream = null;
         Stream myStream = null;
-        public String imgBuf = @"filebuff.png";   //the path to save (not to preview)  
+        public String imgBuf = @"buff.bmp";   //the path to save (not to preview)  
 
         OpenFileDialog openFileDialog1 = new OpenFileDialog
         {
             InitialDirectory = Directory.GetCurrentDirectory(),
-            Filter = "All files (*.*)|*.*|PNG (*.png)|*.png",
+            Filter = "All files (*.*)|*.*|BMP (*.bmp)|*.bmp",
             FilterIndex = 2,
             RestoreDirectory = true
         };
@@ -63,6 +63,9 @@ namespace WpfApp1
 
         private void ItemSave_Click(object sender, RoutedEventArgs e)
         {
+            saveFileDialog1.ShowDialog();
+
+            imgBuf=saveFileDialog1.FileName;
             try
             {
                 myfileStream = new FileStream(imgBuf, FileMode.Create);
